@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Login with Planet</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      background: url('https://images.pexels.com/photos/220201/pexels-photo-220201.jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .center-wrapper {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(1.5px); /* Slight blur to enhance readability */
+    }
+
+    .login-container {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 40px 30px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+      width: 340px;
+      text-align: center;
+      color: white;
+    }
+
+    .login-container h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #555;
+      background: #1c1c1c;
+      color: white;
+      font-size: 15px;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #00bfff;
+      box-shadow: 0 0 3px #00bfff;
+    }
+
+    .remember-me {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #ccc;
+      margin: 10px 0;
+    }
+
+    .remember-me input {
+      margin-right: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00bfff;
+      border: none;
+      border-radius: 6px;
+      color: black;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.3s ease;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #009acd;
+    }
+
+    .signup {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .signup a {
+      color: #00bfff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .signup a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-wrapper">
+    <div class="login-container">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" id="username" />
+      <input type="password" placeholder="Password" id="password" />
+      <div class="remember-me">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember Me</label>
+      </div>
+      <button onclick="login()">Log In</button>
+      <div class="signup">
+        Don't have an account? <a href="#">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      alert("Logged in 🚀");
+    }
+  </script>
+</body>
+</html>
